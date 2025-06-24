@@ -1,0 +1,100 @@
+/** @format */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f9fc;
+  color: #333;
+  padding: 2rem;
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: white;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  color: #00796b;
+  margin-bottom: 1rem;
+}
+
+p {
+  margin-bottom: 1.5rem;
+  color: #555;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 2rem;
+}
+
+th,
+td {
+  text-align: left;
+  padding: 10px 15px;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background-color: #e0f7fa;
+  color: #00796b;
+  width: 30%;
+}
+
+td {
+  background-color: #fff;
+}
+
+.actions {
+  display: flex;
+  gap: 1rem;
+}
+
+.actions a {
+  padding: 0.6rem 1.2rem;
+  background-color: #00796b;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+.actions a:hover {
+  background-color: #004d40;
+}
+
+@media (max-width: 600px) {
+  table,
+  th,
+  td {
+    display: block;
+    width: 100%;
+  }
+
+  th,
+  td {
+    padding: 10px 0;
+    border-bottom: none;
+  }
+
+  th::before,
+  td::before {
+    content: attr(data-label);
+    display: inline-block;
+    width: 40%;
+    font-weight: bold;
+    color: #555;
+    padding-right: 10px;
+  }
+}
