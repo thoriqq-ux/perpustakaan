@@ -1,0 +1,152 @@
+/** @format */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", sans-serif;
+  background-color: #f4f9fc;
+  color: #333;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 2rem;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+h1 {
+  color: #00796b;
+  margin-bottom: 0.5rem;
+}
+
+p {
+  color: #555;
+  margin-bottom: 1rem;
+}
+
+.back-button {
+  margin-bottom: 2rem;
+}
+
+.btn-back {
+  display: inline-block;
+  padding: 0.6rem 1rem;
+  background-color: #00796b;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.btn-back:hover {
+  background-color: #004d40;
+}
+
+/* Search Form */
+.search-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.search-bar input,
+.search-bar select,
+.search-bar button {
+  padding: 0.6rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.search-bar button {
+  background-color: #00796b;
+  color: white;
+  cursor: pointer;
+  border: none;
+}
+
+.search-bar button:hover {
+  background-color: #004d40;
+}
+
+/* Card Layout */
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.book-card-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.book-card {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  text-align: center;
+}
+
+.book-card:hover {
+  transform: translateY(-5px);
+}
+
+.book-card h3 {
+  font-size: 1.2rem;
+  margin: 1rem 0 0.5rem;
+  color: #00796b;
+}
+
+.book-card p {
+  margin: 0.3rem 0;
+  color: #555;
+  font-size: 0.95rem;
+  padding: 0 1rem 1rem;
+}
+
+.no-result {
+  text-align: center;
+  padding: 2rem;
+  color: #888;
+}
+
+/* Pagination */
+.pagination {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+}
+
+.pagination a {
+  padding: 0.5rem 0.8rem;
+  background-color: #e0f7fa;
+  color: #00796b;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.pagination a:hover {
+  background-color: #b2ebf2;
+}
+
+.pagination a.active {
+  background-color: #00796b;
+  color: white;
+}
